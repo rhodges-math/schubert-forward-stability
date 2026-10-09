@@ -1,0 +1,48 @@
+cff-version: 1.2.0
+message: "If you use or adapt this code, please cite this repository."
+type: software
+title: "schubert-forward-stability: Lean verification of The record statistic and forward stability of Schubert products"
+abstract: >-
+  A Lean 4 formalization of A. Hardt, R. Hodges, H. Yin, "The record statistic
+  and forward stability of Schubert products": the record probabilities of
+  uniform, Grassmannian and Boolean permutations (Theorem 1.1), the
+  Hardt-Wallach formula for the forward stability of a product of Schubert
+  polynomials (1.2), the expectation and limit law of the forward stability for
+  independent uniform permutations (Theorem 1.3) and Grassmannian permutations
+  (Theorem 1.4), its expectation for Boolean permutations (Theorem 1.5), and the
+  corresponding results for backward stability, together with every other
+  statement of the paper; its conjectures are stated. Accompanying libraries
+  develop finitary permutations and their records, Schubert polynomials over any
+  commutative ring, limit theorems for triangular arrays, and strong mixing.
+authors:
+  - family-names: Hodges
+    given-names: Reuven
+version: "1.0.0"
+repository-code: "https://github.com/rhodges-math/schubert-forward-stability"
+license: Apache-2.0
+keywords:
+  - Lean 4
+  - Mathlib
+  - formalization
+  - Schubert polynomials
+  - forward stability
+  - records
+  - random permutations
+  - strong mixing
+references:
+  - type: article
+    title: "The record statistic and forward stability of Schubert products"
+    authors:
+      - family-names: Hardt
+        given-names: Andrew
+      - family-names: Hodges
+        given-names: Reuven
+      - family-names: Yin
+        given-names: Hanzhang
+    year: 2026
+    identifiers:
+      - type: other
+        value: "arXiv:2604.02964"
+        description: "arXiv identifier"
+      - type: url
+        value: "https://arxiv.org/abs/2604.02964"

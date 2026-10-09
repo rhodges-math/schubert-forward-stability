@@ -1,0 +1,13 @@
+schubert-forward-stability: Lean verification of The record statistic and forward stability of Schubert products
+Copyright 2026 Reuven Hodges
+
+This formalization accompanies A. Hardt, R. Hodges, H. Yin, *The record statistic and forward
+stability of Schubert products* (arXiv:2604.02964). If you use or adapt this code, please cite
+this repository.
+
+One source file is adapted from Mathlib (Apache License 2.0):
+SchubertForwardStability/LimitTheorems/Convergence/Slutsky.lean, from
+Mathlib/MeasureTheory/Function/ConvergenceInDistribution.lean (Rémy Degenne). Mathlib and its
+dependencies are downloaded by Lake at pinned revisions and keep their own licenses.
+
+See THIRD_PARTY_NOTICES.md.

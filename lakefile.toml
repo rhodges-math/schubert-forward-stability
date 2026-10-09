@@ -1,0 +1,12 @@
+name = "schubert-forward-stability"
+version = "1.0.0"
+defaultTargets = ["SchubertForwardStability.Paper.Audit"]
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4"
+rev = "b2bf051988bf69448bce88722cc09a05fea31662"
+
+[[lean_lib]]
+name = "SchubertForwardStability"
+globs = ["SchubertForwardStability.+"]

@@ -1,0 +1,188 @@
+import SchubertForwardStability.Permutations.Finitary.Basic
+import SchubertForwardStability.Permutations.Finitary.Countable
+import SchubertForwardStability.Permutations.Finitary.Bounds
+import SchubertForwardStability.Permutations.Finitary.Finite
+import SchubertForwardStability.Permutations.Finitary.Longest
+import SchubertForwardStability.Permutations.Finitary.Relative
+import SchubertForwardStability.Permutations.Finitary.LengthBounds
+import SchubertForwardStability.Permutations.Statistics.Records
+import SchubertForwardStability.Permutations.Statistics.RecordSums
+import SchubertForwardStability.Permutations.Statistics.Inversions
+import SchubertForwardStability.Permutations.Statistics.Descents
+import SchubertForwardStability.Permutations.Statistics.DescentOrder
+import SchubertForwardStability.Permutations.Statistics.SuffixRecords
+import SchubertForwardStability.Permutations.Statistics.SuffixFinite
+import SchubertForwardStability.Permutations.Statistics.SuffixExtrema
+import SchubertForwardStability.Permutations.Statistics.SuffixMaximum
+import SchubertForwardStability.Permutations.Statistics.SuffixPivot
+import SchubertForwardStability.Permutations.Statistics.PivotCovers
+import SchubertForwardStability.Permutations.Statistics.SuffixChoice
+import SchubertForwardStability.Permutations.Statistics.SuffixExchange
+import SchubertForwardStability.Permutations.Statistics.LehmerCode
+import SchubertForwardStability.Permutations.Statistics.LehmerRanks
+import SchubertForwardStability.Permutations.Statistics.LehmerInjective
+import SchubertForwardStability.Permutations.Statistics.AdjacentLength
+import SchubertForwardStability.Permutations.Statistics.SuffixAscent
+import SchubertForwardStability.Permutations.Statistics.SuffixAttainment
+import SchubertForwardStability.Permutations.Statistics.ExchangeLengthPairs
+import SchubertForwardStability.Permutations.Statistics.ExchangeLength
+import SchubertForwardStability.Permutations.Classes.Grassmannian
+import SchubertForwardStability.Permutations.Classes.GrassBlocks
+import SchubertForwardStability.Permutations.Classes.GrassEncoding
+import SchubertForwardStability.Permutations.Classes.GrassClassification
+import SchubertForwardStability.Permutations.Classes.GrassRecordStructure
+import SchubertForwardStability.Permutations.Classes.Patterns
+import SchubertForwardStability.Permutations.Classes.ReducedWords
+import SchubertForwardStability.Permutations.Classes.Intervals.WordCuts
+import SchubertForwardStability.Permutations.Classes.WordRoots
+import SchubertForwardStability.Permutations.Classes.WordInversions
+import SchubertForwardStability.Permutations.Classes.WordExchange
+import SchubertForwardStability.Permutations.Classes.PivotRank
+import SchubertForwardStability.Permutations.Classes.DescentDiamonds
+import SchubertForwardStability.Permutations.Classes.SortingEvaluation
+import SchubertForwardStability.Permutations.Classes.FiniteWords
+import SchubertForwardStability.Permutations.Classes.PositiveEvaluation
+import SchubertForwardStability.Permutations.Classes.Tags.TagValidity
+import SchubertForwardStability.Permutations.Classes.Boolean.BooleanSupport
+import SchubertForwardStability.Permutations.Classes.Boolean.BooleanLength
+import SchubertForwardStability.Permutations.Classes.Boolean.BooleanLex
+import SchubertForwardStability.Permutations.Classes.Boolean.BooleanCommutations
+import SchubertForwardStability.Permutations.Classes.Boolean.BooleanDistinct
+import SchubertForwardStability.Permutations.Classes.Intervals.BlockWords
+import SchubertForwardStability.Permutations.Classes.Intervals.BlockRuns
+import SchubertForwardStability.Permutations.Classes.Intervals.BlockAscending
+import SchubertForwardStability.Permutations.Classes.NeighborProjection
+import SchubertForwardStability.Permutations.Classes.NormalWords
+import SchubertForwardStability.Permutations.Classes.Boolean.BooleanNormal
+import SchubertForwardStability.Permutations.Classes.NormalNeighbors
+import SchubertForwardStability.Permutations.Classes.Tags.TagReadout
+import SchubertForwardStability.Permutations.Classes.Tags.TagRepresentative
+import SchubertForwardStability.Permutations.Classes.ProjectionWords
+import SchubertForwardStability.Permutations.Classes.Tags.TagInjective
+import SchubertForwardStability.Permutations.Classes.Tags.TagProjection
+import SchubertForwardStability.Permutations.Classes.Tags.TagRecovery
+import SchubertForwardStability.Permutations.Classes.Boolean.BooleanCounts
+import SchubertForwardStability.Permutations.Classes.Intervals.BooleanIntervals
+import SchubertForwardStability.Permutations.Classes.Intervals.BlockCut
+import SchubertForwardStability.Permutations.Classes.Intervals.BlockPartition
+import SchubertForwardStability.Permutations.Classes.Intervals.WordIntervals
+import SchubertForwardStability.Permutations.Classes.Intervals.RecordFactors
+import SchubertForwardStability.Permutations.Classes.Intervals.CutSupport
+import SchubertForwardStability.Permutations.Classes.Intervals.IntervalWords
+import SchubertForwardStability.Permutations.Classes.Intervals.IntervalEndpoints
+import SchubertForwardStability.Permutations.Classes.Intervals.IntervalProducts
+import SchubertForwardStability.Permutations.Classes.Intervals.BoundaryCuts
+import SchubertForwardStability.Permutations.Classes.Intervals.BoundaryImages
+import SchubertForwardStability.Permutations.Classes.Intervals.BoundaryBijections
+import SchubertForwardStability.Permutations.Classes.Intervals.RecordSwaps
+import SchubertForwardStability.Permutations.Classes.Tags.TagCoordinates
+import SchubertForwardStability.Permutations.Classes.Tags.TagRecords
+import SchubertForwardStability.Permutations.Classes.CycleWord
+import SchubertForwardStability.Permutations.Classes.LexWord
+import SchubertForwardStability.Permutations.Classes.Boolean
+import SchubertForwardStability.Permutations.Random.Uniform
+import SchubertForwardStability.Permutations.Random.Subsets
+import SchubertForwardStability.Permutations.ForMathlib.UniformEvents
+import SchubertForwardStability.Permutations.ForMathlib.UniformBijection
+import SchubertForwardStability.Permutations.Random.Tags.BooleanTagLaw
+import SchubertForwardStability.Permutations.Random.PointMasses
+import SchubertForwardStability.Permutations.Random.SubsetCounts
+import SchubertForwardStability.Permutations.Random.CardLaw
+import SchubertForwardStability.Permutations.Random.PairWeights
+import SchubertForwardStability.Permutations.Random.SubsetMaximum
+import SchubertForwardStability.Permutations.Random.SubsetMeans
+import SchubertForwardStability.Permutations.Random.MaximumLaw
+import SchubertForwardStability.Permutations.Random.CardTail
+import SchubertForwardStability.Permutations.Random.ExtremeTails
+import SchubertForwardStability.Permutations.Random.RecordPrefix
+import SchubertForwardStability.Permutations.Random.GrassRecordCounts
+import SchubertForwardStability.Permutations.Random.GrassRecordLaw
+import SchubertForwardStability.Permutations.Random.FamilyInstances
+import SchubertForwardStability.Permutations.ForMathlib.UniformIntegrals
+import SchubertForwardStability.Permutations.ForMathlib.UniformIntegrable
+import SchubertForwardStability.Permutations.Random.RecordCode
+import SchubertForwardStability.Permutations.ForMathlib.UniformCode
+import SchubertForwardStability.Permutations.Random.Records
+import SchubertForwardStability.Permutations.Random.NonRecords
+import SchubertForwardStability.Permutations.Classes.PatternFamilies
+import SchubertForwardStability.Permutations.Classes.Patterns.PatternRecords
+import SchubertForwardStability.Permutations.Classes.Tags.BlockTags
+import SchubertForwardStability.Permutations.Classes.Tags.TagCounts
+import SchubertForwardStability.Permutations.Classes.Tags.TagExtensions
+import SchubertForwardStability.Permutations.Classes.Tags.TagLists
+import SchubertForwardStability.Permutations.Classes.Boolean.BooleanRecords
+import SchubertForwardStability.Permutations.Classes.Intervals.BooleanBlocks
+import SchubertForwardStability.Permutations.Random.Tags.BlockTags
+import SchubertForwardStability.Permutations.Random.Tags.TagKernel
+import SchubertForwardStability.Permutations.Random.Tags.TagContraction
+import SchubertForwardStability.Permutations.Random.Tags.TagSampler
+import SchubertForwardStability.Permutations.Random.Tags.TagHistories
+import SchubertForwardStability.Permutations.Random.Tags.TagResidual
+import SchubertForwardStability.Permutations.Random.Tags.TagPartial
+import SchubertForwardStability.Permutations.Random.Tags.TagMarkov
+import SchubertForwardStability.Permutations.Statistics.SuffixRecurrence
+import SchubertForwardStability.Permutations.Statistics.Blocks.TwoBlocks
+import SchubertForwardStability.Permutations.Statistics.Blocks.TwoBlockMaximum
+import SchubertForwardStability.Permutations.Statistics.Blocks.TwoBlockGeneral
+import SchubertForwardStability.Permutations.Statistics.RecordBound
+import SchubertForwardStability.Permutations.Finitary.EmbeddingPerm
+import SchubertForwardStability.Permutations.Finitary.PositiveShift
+import SchubertForwardStability.Permutations.Classes.Intervals.ShiftedIntervals
+import SchubertForwardStability.Permutations.Classes.Intervals.BoundaryCounts
+import SchubertForwardStability.Permutations.Classes.Intervals.IntervalCounts
+import SchubertForwardStability.Permutations.Classes.Boolean.BooleanFibProduct
+import SchubertForwardStability.Permutations.ForMathlib.FibIdentities
+import SchubertForwardStability.Permutations.Classes.Boolean.BooleanFibSimplify
+import SchubertForwardStability.Permutations.Statistics.LongestOrder
+import SchubertForwardStability.Permutations.Classes.LongestWords
+import SchubertForwardStability.Permutations.Classes.LongestClasses
+import SchubertForwardStability.Permutations.Random.LongestLaw
+import SchubertForwardStability.Permutations.Classes.Patterns.PatternSplit
+import SchubertForwardStability.Permutations.Classes.Boolean.BooleanGolden
+import SchubertForwardStability.Permutations.Classes.Boolean.BooleanRestrictions
+import SchubertForwardStability.Permutations.Classes.Patterns.PatternReversal
+import SchubertForwardStability.Permutations.Classes.Patterns.PatternSizes
+import SchubertForwardStability.Permutations.Classes.Patterns.PatternValues
+import SchubertForwardStability.Permutations.ForMathlib.FibBounds
+import SchubertForwardStability.Permutations.ForMathlib.FibGolden
+import SchubertForwardStability.Permutations.ForMathlib.NaturalTails
+import SchubertForwardStability.Permutations.Random.BooleanForward
+import SchubertForwardStability.Permutations.Random.BooleanMoments
+import SchubertForwardStability.Permutations.Random.BooleanRecords
+import SchubertForwardStability.Permutations.Random.FiniteEvents
+import SchubertForwardStability.Permutations.ForMathlib.UniformPMF
+import SchubertForwardStability.Permutations.Random.Tags.SamplerLaw
+import SchubertForwardStability.Permutations.Random.FiberLaw
+import SchubertForwardStability.Permutations.Classes.Patterns.CatalanFibers
+import SchubertForwardStability.Permutations.Classes.Patterns.CatalanEquidistribution
+import SchubertForwardStability.Permutations.Classes.Tags.TagDefinition
+
+/-! # Finitary permutations and their statistics
+
+This module imports the whole Permutations library: the permutations of the positive
+integers that move finitely many points. It covers inversions, length, descents, the Lehmer
+code and reduced words; records, the non-record counts and forward stability; Grassmannian
+and Boolean permutations, with the encoding of Boolean permutations by block-boundary words
+and its Markov chain; pattern avoidance and the Catalan families `Av(132)` and `Av(231)`;
+and uniform random permutations, with the uniform subset model of Grassmannian permutations.
+
+## Main results
+
+* `FinitaryPerm.iIndepFun_uniform_records`: the record indicators of a uniform element of
+  `S_n` are independent (Rényi).
+* `FinitaryPerm.uniform_record_probability`: position `j` is a record with probability `1/j`.
+* `FinitaryPerm.card_boolean_int_fib`: for `n >= 1`, the number of Boolean permutations in
+  `S_n` is `F(2n-1)`.
+* `FinitaryPerm.not_hasCommutingInversion_lexFirst`: the lexicographically first reduced
+  word has no commuting inversion.
+* `FinitaryPerm.booleanTags_bijOn`: Boolean permutations correspond to valid block-boundary
+  words.
+* `FinitaryPerm.tagLaw_conditional_next`: the presence process of a uniform Boolean
+  permutation is Markov.
+* `FinitaryPerm.tagSuffixSampler_uniform`: the sequential sampler is uniform.
+* `PermutationPattern.card_avoiding231_catalan`: `|Av_n(231)| = Cat(n)`.
+* `PermutationPattern.recordFiberCard_catalan_eq`: `132`- and `231`-avoiders have the same
+  number of elements with each record set.
+* `FinitaryPerm.longest_class_law`: conjugation by `w_0` preserves the uniform,
+  Grassmannian and Boolean laws.
+-/

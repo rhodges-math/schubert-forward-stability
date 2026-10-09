@@ -1,0 +1,100 @@
+import SchubertForwardStability.StrongMixing.Coefficients.Generated
+import SchubertForwardStability.StrongMixing.Coefficients.Basic
+import SchubertForwardStability.StrongMixing.Coefficients.Extension
+import SchubertForwardStability.StrongMixing.Coefficients.Atoms
+import SchubertForwardStability.StrongMixing.Coefficients.CoefficientBounds
+import SchubertForwardStability.StrongMixing.Coefficients.Boundaries
+import SchubertForwardStability.StrongMixing.Coefficients.Reindexing
+import SchubertForwardStability.StrongMixing.Coefficients.FiniteReindexing
+import SchubertForwardStability.StrongMixing.Coefficients.FiniteCompression
+import SchubertForwardStability.StrongMixing.Inequalities.Laplace.BoundedLaplace
+import SchubertForwardStability.StrongMixing.Bernstein.LaplaceTail
+import SchubertForwardStability.StrongMixing.Coefficients.Independence
+import SchubertForwardStability.StrongMixing.Coefficients.ProductFields
+import SchubertForwardStability.StrongMixing.Coefficients.LawTransfer
+import SchubertForwardStability.StrongMixing.Coefficients.IndependentRows
+import SchubertForwardStability.StrongMixing.Inequalities.UnitCovariance
+import SchubertForwardStability.StrongMixing.Inequalities.BoundedCovariance
+import SchubertForwardStability.StrongMixing.Inequalities.Laplace.PositiveLaplace
+import SchubertForwardStability.StrongMixing.Inequalities.Laplace.SeparatedLaplace
+import SchubertForwardStability.StrongMixing.Inequalities.Laplace.LaplaceCombination
+import SchubertForwardStability.StrongMixing.Inequalities.Laplace.LaplaceLogs
+import SchubertForwardStability.StrongMixing.Inequalities.Laplace.IbragimovProducts
+import SchubertForwardStability.StrongMixing.Inequalities.Laplace.DyadicLaplace
+import SchubertForwardStability.StrongMixing.Inequalities.DyadicBlocks
+import SchubertForwardStability.StrongMixing.Inequalities.Cantor.CantorBlocks
+import SchubertForwardStability.StrongMixing.Inequalities.Laplace.FiniteDyadic
+import SchubertForwardStability.StrongMixing.Inequalities.FiniteBlocks
+import SchubertForwardStability.StrongMixing.Inequalities.Cantor.CantorLaplace
+import SchubertForwardStability.StrongMixing.Inequalities.Cantor.CantorLengths
+import SchubertForwardStability.StrongMixing.Inequalities.Cantor.CantorGeometric
+import SchubertForwardStability.StrongMixing.Inequalities.CoordinateCovariance
+import SchubertForwardStability.StrongMixing.Inequalities.GeometricSums
+import SchubertForwardStability.StrongMixing.Inequalities.IntervalMoments
+import SchubertForwardStability.StrongMixing.Inequalities.IntervalLaplace
+import SchubertForwardStability.StrongMixing.Inequalities.Cantor.CantorTerminal
+import SchubertForwardStability.StrongMixing.Inequalities.SubsetIntervals
+import SchubertForwardStability.StrongMixing.Inequalities.BlockProducts
+import SchubertForwardStability.StrongMixing.Inequalities.Cantor.CantorPartial
+import SchubertForwardStability.StrongMixing.Inequalities.SeparatedProducts
+import SchubertForwardStability.StrongMixing.Inequalities.AlternatingBlocks
+import SchubertForwardStability.StrongMixing.Inequalities.AlternatingLaplace
+import SchubertForwardStability.StrongMixing.Inequalities.TerminalChoice
+import SchubertForwardStability.StrongMixing.Inequalities.TerminalSubset
+import SchubertForwardStability.StrongMixing.Inequalities.Cantor.CantorFixed
+import SchubertForwardStability.StrongMixing.Inequalities.Cantor.CantorDecay
+import SchubertForwardStability.StrongMixing.Inequalities.Laplace.InverseExponential
+import SchubertForwardStability.StrongMixing.Inequalities.Cantor.CantorStopping
+import SchubertForwardStability.StrongMixing.Inequalities.Cantor.CantorStopped
+import SchubertForwardStability.StrongMixing.Inequalities.Cantor.CantorQuadratic
+import SchubertForwardStability.StrongMixing.Inequalities.RemovedCoordinates
+import SchubertForwardStability.StrongMixing.Inequalities.Cantor.AdjustedCantorDepth
+import SchubertForwardStability.StrongMixing.Inequalities.IntervalRemainder
+import SchubertForwardStability.StrongMixing.Inequalities.SubsetRemainder
+import SchubertForwardStability.StrongMixing.Inequalities.CompressedCantor
+import SchubertForwardStability.StrongMixing.Bernstein.BernsteinCombination
+import SchubertForwardStability.StrongMixing.Inequalities.Cantor.CantorParameters
+import SchubertForwardStability.StrongMixing.Inequalities.Cantor.CantorSmallLengths
+import SchubertForwardStability.StrongMixing.Inequalities.RetainedSubset
+import SchubertForwardStability.StrongMixing.Inequalities.SmallSubset
+import SchubertForwardStability.StrongMixing.Inequalities.RetainedLaplace
+import SchubertForwardStability.StrongMixing.Inequalities.FinitePeeling
+import SchubertForwardStability.StrongMixing.Inequalities.PeelingDepth
+import SchubertForwardStability.StrongMixing.Bernstein.RetainedBernstein
+import SchubertForwardStability.StrongMixing.Bernstein.PeelingScales
+import SchubertForwardStability.StrongMixing.Bernstein.PeelingRows
+import SchubertForwardStability.StrongMixing.Bernstein.PeelingRemainder
+import SchubertForwardStability.StrongMixing.Bernstein.PeelingConstants
+import SchubertForwardStability.StrongMixing.Bernstein.PeelingCombination
+import SchubertForwardStability.StrongMixing.Bernstein.PeelingMPR
+import SchubertForwardStability.StrongMixing.Coefficients.AEEqCoefficients
+import SchubertForwardStability.StrongMixing.Inequalities.Laplace.BoundedVersion
+import SchubertForwardStability.StrongMixing.Bernstein.MPRAlmostEverywhere
+import SchubertForwardStability.StrongMixing.Bernstein.MPRPositive
+import SchubertForwardStability.StrongMixing.Bernstein.MPRTails
+import SchubertForwardStability.StrongMixing.Coefficients.QuarterBound
+import SchubertForwardStability.StrongMixing.Coefficients.FieldTransport
+import SchubertForwardStability.StrongMixing.Coefficients.CoordinateMaps
+import SchubertForwardStability.StrongMixing.MarkovChains.TwoStateExpectations
+import SchubertForwardStability.StrongMixing.MarkovChains.FiniteConditioning
+import SchubertForwardStability.StrongMixing.Bernstein.FiniteTails
+
+/-! # Strong mixing of random sequences
+
+This module imports the whole strong mixing library. It covers Rosenblatt's α-mixing
+coefficients of sequences indexed by ℤ and of finite rows; their behaviour under coordinate
+maps, reindexing, almost-everywhere equality and independent noise; Ibragimov's covariance
+inequality; the Bernstein inequality of Merlevède, Peligrad and Rio for bounded, centered,
+geometrically α-mixing sequences; and contraction estimates for two-state Markov chains.
+
+## Main results
+
+* `StrongMixing.strongMixingCoeff`, `StrongMixing.mixingCoeff`: Rosenblatt's coefficient and
+  its lag-`h` form.
+* `StrongMixing.finiteMixingCoeff_pair_le`: mixing of independent pairs of rows.
+* `StrongMixing.bounded_covariance_le`: Ibragimov's covariance inequality.
+* `StrongMixing.mpr_positive_laplace_le`: the Merlevède–Peligrad–Rio Laplace bound.
+* `StrongMixing.mpr_finite_lower_tail`: the lower tail on a finite coordinate set.
+* `StrongMixing.mpr_positive_two_sided`: the two-sided tail bound.
+* `StrongMixing.binary_expectation_contract`: two-state contraction against future events.
+-/
