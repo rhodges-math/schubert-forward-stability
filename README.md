@@ -250,8 +250,7 @@ and the strong mixing library.
 | --- | --- |
 | `boolean_product_expectation` | Theorem 1.5 |
 | `finiteMixingCoeff_boolean_le` | Proposition 5.24: geometric strong mixing |
-| `StrongMixing.mpr_positive_lower_tail` | Lemma 5.25, the lower tail |
-| `StrongMixing.mpr_positive_two_sided` | Lemma 5.25, the two-sided bound |
+| `StrongMixing.mpr_positive_lower_tail` | Lemma 5.25 |
 | `boolean_sampler_linear` | Remark 5.22: a uniform sampler for $\mathcal{B}\_n$ with at most $16n$ steps |
 
 ### Backward stability (Section 6)

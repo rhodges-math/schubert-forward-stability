@@ -760,10 +760,10 @@ The proof bounds the mixing coefficients of the tag sequence directly, by condit
 
 Status: **formalized**
 
-Cited in the paper and proved here, from the Laplace-transform estimate of Merlevède, Peligrad and Rio.
+Cited in the paper and proved here, from the Laplace-transform estimate of Merlevède, Peligrad and Rio; the same bound for the upper tail, and the two-sided bound with a factor $2$, are proved as well.
 
-- `StrongMixing.mpr_positive_two_sided` ([SchubertForwardStability/StrongMixing/Bernstein/MPRTails.lean](../SchubertForwardStability/StrongMixing/Bernstein/MPRTails.lean))
 - `StrongMixing.mpr_positive_lower_tail` ([SchubertForwardStability/StrongMixing/Bernstein/MPRTails.lean](../SchubertForwardStability/StrongMixing/Bernstein/MPRTails.lean))
+- `StrongMixing.mpr_positive_two_sided` ([SchubertForwardStability/StrongMixing/Bernstein/MPRTails.lean](../SchubertForwardStability/StrongMixing/Bernstein/MPRTails.lean))
 - `StrongMixing.mpr_positive_laplace_le` ([SchubertForwardStability/StrongMixing/Bernstein/MPRPositive.lean](../SchubertForwardStability/StrongMixing/Bernstein/MPRPositive.lean))
 - `StrongMixing.mpr_positive_upper_tail` ([SchubertForwardStability/StrongMixing/Bernstein/MPRTails.lean](../SchubertForwardStability/StrongMixing/Bernstein/MPRTails.lean))
 - `StrongMixing.mprTailConstant` ([SchubertForwardStability/StrongMixing/Bernstein/MPRTails.lean](../SchubertForwardStability/StrongMixing/Bernstein/MPRTails.lean))
